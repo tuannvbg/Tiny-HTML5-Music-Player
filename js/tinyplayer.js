@@ -53,7 +53,7 @@ function Track( ID, audioTrack, nextCallback, current, showwaveform ) {
 		divContent    += '</div>';
 		divContent    += '<div class="audiodisplay">';
 		if ( showwaveform == true )
-			divContent    += '<img class="audiowaveform" src="'+audioTrack.img+'"/>';
+			divContent    += '<img class="audiowaveform" src="'+audioTrack.url+'.png"/>';
 		else
 			divContent    += '<div class="noaudiowaveform"></div>';
 		divContent    += '<canvas id="'+audioSeek+'" class="audioSeek" width="'+document.getElementById(parentDIV).offsetWidth+'" height="50">'+canvasErrorMSG+'</canvas>';
